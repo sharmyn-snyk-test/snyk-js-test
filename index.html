@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSS Test App</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        input[type="text"] { width: 300px; padding: 8px; }
+        button { padding: 10px 15px; cursor: pointer; }
+        #output { margin-top: 20px; border: 1px solid #ccc; padding: 10px; min-height: 50px; }
+    </style>
+</head>
+<body>
+    <h1>XSS Vulnerability Test</h1>
+    <p>Enter some text (try HTML tags like &lt;script&gt;alert('XSS')&lt;/script&gt;):</p>
+    <input type="text" id="userInput" placeholder="Type something here">
+    <button id="displayButton">Display Text</button>
+    <div id="output"></div>
+
+    <h2>Vulnerable Dependency Test</h2>
+    <p>This project uses a vulnerable version of 'lodash' for Snyk Open Source detection.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
