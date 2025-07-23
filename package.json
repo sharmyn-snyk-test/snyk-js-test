@@ -1,0 +1,16 @@
+{
+  "name": "snyk-js-xss-test",
+  "version": "1.0.0",
+  "description": "A dummy JS app for Snyk vulnerability detection.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "4.17.4"  
+    // INTENTIONAL VULNERABILITY: lodash 4.17.4 has known vulnerabilities (e.g., CVE-2018-16487, CVE-2019-10744)
+  }
+}
